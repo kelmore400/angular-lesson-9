@@ -1,0 +1,14 @@
+<div>
+  <div>
+    <label for="login">
+      Login:
+      <input name="login" type="text" id="login" [(ngModel)]="login" />
+    </label>
+    <label for="password">
+      Password:
+      <input name="password" type="text" id="password" [(ngModel)]="password" />
+    </label>
+    <button (click)="logIn()">LogIn</button>
+  </div>
+  <p *ngIf="error" style="color: red">{{error}}</p>
+</div>
